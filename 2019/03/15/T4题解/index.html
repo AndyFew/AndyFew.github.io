@@ -96,25 +96,25 @@
 
 
 
-  <meta name="description" content="巨水。。。既然是最大，那么我们想到把数组从大到小排序一遍，再取前m个数，就OK了Source:1234567891011121314151617#include &amp;lt;bits/stdc++.h&amp;gt;using namespace std;typedef long long ll;const int MAXN=100010;int a[MAXN],n,m;ll cnt;bool cmp(int">
+  <meta name="description" content="题意：辗转相减你想到了什么？。。。gcd里面好像有这个算法对了这个题就是求这n个数的最大公约数所以就很简单了 Source:12345678910111213141516171819202122232425#include &amp;lt;bits/stdc++.h&amp;gt;using namespace std;typedef long long ll;const int MAXN=100010;int">
 <meta name="keywords" content="E.P. 1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="T1题解">
-<meta property="og:url" content="https://AndyFew.github.io/2019/03/10/T1题解/index.html">
+<meta property="og:title" content="T4题解">
+<meta property="og:url" content="https://AndyFew.github.io/2019/03/15/T4题解/index.html">
 <meta property="og:site_name" content="AC_Dolphin&#39;s blog">
-<meta property="og:description" content="巨水。。。既然是最大，那么我们想到把数组从大到小排序一遍，再取前m个数，就OK了Source:1234567891011121314151617#include &amp;lt;bits/stdc++.h&amp;gt;using namespace std;typedef long long ll;const int MAXN=100010;int a[MAXN],n,m;ll cnt;bool cmp(int">
+<meta property="og:description" content="题意：辗转相减你想到了什么？。。。gcd里面好像有这个算法对了这个题就是求这n个数的最大公约数所以就很简单了 Source:12345678910111213141516171819202122232425#include &amp;lt;bits/stdc++.h&amp;gt;using namespace std;typedef long long ll;const int MAXN=100010;int">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-12T05:13:02.234Z">
+<meta property="og:updated_time" content="2019-03-15T10:35:18.898Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="T1题解">
-<meta name="twitter:description" content="巨水。。。既然是最大，那么我们想到把数组从大到小排序一遍，再取前m个数，就OK了Source:1234567891011121314151617#include &amp;lt;bits/stdc++.h&amp;gt;using namespace std;typedef long long ll;const int MAXN=100010;int a[MAXN],n,m;ll cnt;bool cmp(int">
+<meta name="twitter:title" content="T4题解">
+<meta name="twitter:description" content="题意：辗转相减你想到了什么？。。。gcd里面好像有这个算法对了这个题就是求这n个数的最大公约数所以就很简单了 Source:12345678910111213141516171819202122232425#include &amp;lt;bits/stdc++.h&amp;gt;using namespace std;typedef long long ll;const int MAXN=100010;int">
 
 
 
 
 
 
-  <link rel="canonical" href="https://AndyFew.github.io/2019/03/10/T1题解/">
+  <link rel="canonical" href="https://AndyFew.github.io/2019/03/15/T4题解/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>T1题解 | AC_Dolphin's blog</title>
+  <title>T4题解 | AC_Dolphin's blog</title>
   
 
 
@@ -327,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://AndyFew.github.io/2019/03/10/T1题解/">
+    <link itemprop="mainEntityOfPage" href="https://AndyFew.github.io/2019/03/15/T4题解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="AC_Dolphin">
@@ -344,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">T1题解
+          <h1 class="post-title" itemprop="name headline">T4题解
 
               
             
@@ -370,24 +370,12 @@
                 
               
 
-              <time title="创建时间：2019-03-10 20:51:47" itemprop="dateCreated datePublished" datetime="2019-03-10T20:51:47+08:00">2019-03-10</time>
+              <time title="创建时间：2019-03-15 18:25:57 / 修改时间：18:35:18" itemprop="dateCreated datePublished" datetime="2019-03-15T18:25:57+08:00">2019-03-15</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-12 13:13:02" itemprop="dateModified" datetime="2019-03-12T13:13:02+08:00">2019-03-12</time>
               
             
           </span>
@@ -427,7 +415,8 @@
       
 
       
-        <p>巨水。。。<br>既然是最大，那么我们想到把数组从大到小排序一遍，再取前m个数，就OK了<br><!----><br>Source:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">100010</span>;</span><br><span class="line"><span class="keyword">int</span> a[MAXN],n,m;</span><br><span class="line">ll cnt;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a&gt;b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">    sort(a+<span class="number">1</span>,a+n+<span class="number">1</span>,cmp);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) cnt+=a[i];</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;cnt; </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <p>题意：辗转相减<br>你想到了什么？<br>。。。<br>gcd里面好像有这个算法<br>对了这个题就是求这n个数的最大公约数<br>所以就很简单了</p>
+<p>Source:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">100010</span>;</span><br><span class="line"><span class="keyword">int</span> a[MAXN],n,cnt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> f=<span class="number">1</span>,x=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">char</span> ch=getchar();</span><br><span class="line">    <span class="keyword">while</span>(ch&lt;<span class="string">'0'</span>||ch&gt;<span class="string">'9'</span>) &#123;<span class="keyword">if</span>(ch==<span class="string">'-'</span>) f=<span class="number">-1</span>;ch=getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span>(ch&gt;=<span class="string">'0'</span>&amp;&amp;ch&lt;=<span class="string">'9'</span>) &#123;x=x*<span class="number">10</span>+ch-<span class="string">'0'</span>;ch=getchar();&#125;</span><br><span class="line">    <span class="keyword">return</span> f*x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(b==<span class="number">0</span>) <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">return</span> gcd(b,a%b);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">        cnt=gcd(cnt,a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;cnt;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -464,15 +453,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/03/12/T3题解/" rel="next" title="T3题解">
+                <i class="fa fa-chevron-left"></i> T3题解
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/12/T2题解/" rel="prev" title="T2题解">
-                T2题解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
